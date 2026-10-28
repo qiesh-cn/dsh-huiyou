@@ -17,6 +17,7 @@
     "cordis.patch.yml",
     "icon.svg",
     "assets/banner.svg",
+    "assets/icon-180.png",
     "locale/*.json"
   ],
   "keywords": [
