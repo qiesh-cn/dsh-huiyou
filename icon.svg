@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Session manager">
+  <rect width="64" height="64" rx="14" fill="#F2F4F7"/>
+  <path d="M22 20h20M27 20v-3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3M25 20l1.4 24a3 3 0 0 0 3 2.8h10.2a3 3 0 0 0 3-2.8L44 20" fill="none" stroke="#247BBF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M30 28v12M36 28v12" fill="none" stroke="#247BBF" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,56 @@
+{
+  "name": "@local/dsh-session-manager",
+  "version": "1.0.0",
+  "description": "洄游 · 会话回收站：删除会话、侧栏「工作区 / 回收站」切换，支持搜索、恢复、彻底删除",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "assets/banner.svg",
+    "locale/*.json"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "session",
+    "recycle-bin",
+    "trash"
+  ],
+  "license": "MIT",
+  "author": "qiesh",
+  "contributors": [
+    "大肥鱼 (DeepSeek Harness Agent)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiesh-cn/dsh-huiyou.git"
+  },
+  "homepage": "https://github.com/qiesh-cn/dsh-huiyou#readme",
+  "bugs": {
+    "url": "https://github.com/qiesh-cn/dsh-huiyou/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-ui-session"
+      ]
+    }
+  }
+}

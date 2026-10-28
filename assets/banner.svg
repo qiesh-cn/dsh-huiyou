@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="洄游 Huiyou — DSH 会话回收站">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A101C"/>
+      <stop offset="0.55" stop-color="#0E1B2C"/>
+      <stop offset="1" stop-color="#102A45"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#2F6FEB" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#2F6FEB" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#FFFFFF" fill-opacity="0.055"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="320" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="28" fill="url(#glow)"/>
+  <rect width="1200" height="320" rx="28" fill="url(#dots)"/>
+
+  <!-- Icon tile -->
+  <g filter="url(#shadow)">
+    <rect x="64" y="104" width="112" height="112" rx="28" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <g transform="translate(92 132) scale(0.875)">
+      <path d="M22 20h20M27 20v-3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3M25 20l1.4 24a3 3 0 0 0 3 2.8h10.2a3 3 0 0 0 3-2.8L44 20" fill="none" stroke="#7DB7FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30 28v12M36 28v12" fill="none" stroke="#7DB7FF" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="208" y="178" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="64" font-weight="700" fill="#F5F8FC">洄游</text>
+  <text x="356" y="178" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="40" font-weight="500" fill="#9FB3C8">Huiyou</text>
+  <text x="210" y="224" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="23" fill="#8FA6BD">DSH 会话回收站 · 删掉的会话，游回来</text>
+  <text x="210" y="262" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="15" letter-spacing="1.4" fill="#5F748A">DSH DESKTOP PLUGIN · MIT · 1.0.0</text>
+
+  <!-- Flow pills -->
+  <g font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="19" fill="#C9D6E3">
+    <rect x="742" y="118" width="104" height="44" rx="22" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="794" y="146" text-anchor="middle">删除</text>
+
+    <rect x="890" y="118" width="124" height="44" rx="22" fill="#2F6FEB" fill-opacity="0.16" stroke="#4176E6" stroke-opacity="0.55"/>
+    <text x="952" y="146" text-anchor="middle" fill="#BFD4FF">回收站</text>
+
+    <rect x="1058" y="118" width="104" height="44" rx="22" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="1110" y="146" text-anchor="middle">恢复</text>
+
+    <g stroke="#5F748A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M856 140h20m-6-6 6 6-6 6"/>
+      <path d="M1024 140h20m-6-6 6 6-6 6"/>
+    </g>
+
+    <!-- Return loop: 恢复 → 删除 -->
+    <path d="M1110 172v30c0 14-11 25-25 25H794c-14 0-25-11-25-25v-26" fill="none" stroke="#4176E6" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="5 6"/>
+    <path d="M769 182l-5-8 10-2" fill="none" stroke="#4176E6" stroke-opacity="0.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
