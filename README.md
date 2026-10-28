@@ -48,8 +48,10 @@ DSH 自带的「归档会话」只是把会话从列表里藏起来，没有「�
 ```mermaid
 stateDiagram-v2
     direction LR
-    工作区 --> 回收站: 点击「回收站」
-    回收站 --> 工作区: 点击「工作区」
+    state "工作区" as W
+    state "回收站" as T
+    W --> T: 点击「回收站」
+    T --> W: 点击「工作区」
 ```
 
 回收站里每一行是「标题 + 今天/N 天」，鼠标移上去换成 **恢复** 和 **彻底删除** 两个图标；标题右侧是搜索和清空。
@@ -58,7 +60,7 @@ stateDiagram-v2
 
 ### 方式一：Release（推荐）
 
-1. 到 [Releases](../../releases/latest) 下载 `huiyou-1.0.0.tgz`。
+1. 到 [Releases](https://github.com/qiesh-cn/dsh-huiyou/releases/latest) 下载 `huiyou-1.0.0.tgz`。
 2. 把它放到一个固定位置，例如 `~/.dsh/plugins/huiyou-1.0.0.tgz`。
 3. 编辑 DSH profile（默认 `~/.dsh/profiles/desktop`）的 `package.json`：
 
